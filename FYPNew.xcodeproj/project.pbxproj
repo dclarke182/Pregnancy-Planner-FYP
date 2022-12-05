@@ -7,22 +7,72 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B569C623280F793B0029E796 /* READ_ME.txt in Resources */ = {isa = PBXBuildFile; fileRef = B569C622280F793B0029E796 /* READ_ME.txt */; };
+		B584BB9127B3FF10005F9DC6 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = B584BB9027B3FF10005F9DC6 /* FirebaseAuth */; };
+		B584BB9327B3FF10005F9DC6 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = B584BB9227B3FF10005F9DC6 /* FirebaseDatabase */; };
+		B584BB9527B3FF10005F9DC6 /* FirebaseDatabaseSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = B584BB9427B3FF10005F9DC6 /* FirebaseDatabaseSwift-Beta */; };
+		B584BB9727B3FF10005F9DC6 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = B584BB9627B3FF10005F9DC6 /* FirebaseFirestore */; };
+		B584BB9927B3FF10005F9DC6 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = B584BB9827B3FF10005F9DC6 /* FirebaseFirestoreSwift-Beta */; };
+		B584BB9B27B3FF10005F9DC6 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = B584BB9A27B3FF10005F9DC6 /* FirebaseStorage */; };
+		B584BB9D27B3FF10005F9DC6 /* FirebaseStorageSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = B584BB9C27B3FF10005F9DC6 /* FirebaseStorageSwift-Beta */; };
+		B584BBA227B4011A005F9DC6 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = B584BBA127B4011A005F9DC6 /* Settings.swift */; };
+		B584BBA427B40128005F9DC6 /* MyCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B584BBA327B40128005F9DC6 /* MyCalendarView.swift */; };
+		B584BBA627B40E22005F9DC6 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B584BBA527B40E22005F9DC6 /* MainView.swift */; };
+		B584BBA827B40EEC005F9DC6 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = B584BBA727B40EEC005F9DC6 /* Home.swift */; };
+		B584BBAA27B41083005F9DC6 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = B584BBA927B41083005F9DC6 /* Notifications.swift */; };
+		B584BBEA27BD7380005F9DC6 /* ElegantCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = B584BBE927BD7380005F9DC6 /* ElegantCalendar */; };
+		B584BBEC27BD73AB005F9DC6 /* ElegantCalendar.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B584BBEB27BD73AB005F9DC6 /* ElegantCalendar.xcassets */; };
+		B584BBF027BD74E8005F9DC6 /* Visit.swift in Sources */ = {isa = PBXBuildFile; fileRef = B584BBEF27BD74E8005F9DC6 /* Visit.swift */; };
+		B584BBF227BD750A005F9DC6 /* Date+Additions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B584BBF127BD750A005F9DC6 /* Date+Additions.swift */; };
+		B5DE4BB727EA440C00B7572F /* Breastfeeding.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE4BB627EA440B00B7572F /* Breastfeeding.swift */; };
+		B5DE4BB927EA456600B7572F /* TummyTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE4BB827EA456600B7572F /* TummyTime.swift */; };
+		B5DE4BBB27EA4D5B00B7572F /* BreastAttach.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE4BBA27EA4D5B00B7572F /* BreastAttach.swift */; };
+		B5DE4BBD27EB629300B7572F /* BreastPositions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE4BBC27EB629300B7572F /* BreastPositions.swift */; };
+		B5DE4BBF27EB796B00B7572F /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE4BBE27EB796B00B7572F /* Profile.swift */; };
+		B5DE4BC127EB7F3C00B7572F /* Steralise.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE4BC027EB7F3C00B7572F /* Steralise.swift */; };
+		B5DE4BC627EB98F200B7572F /* WhySter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE4BC527EB98F200B7572F /* WhySter.swift */; };
+		B5DE4BC927EB995800B7572F /* SterMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE4BC827EB995800B7572F /* SterMethods.swift */; };
+		B5DE4BCF27F1F39400B7572F /* SterTut.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE4BCE27F1F39400B7572F /* SterTut.swift */; };
+		B5DE4BD227F1F53600B7572F /* WhyBreast.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE4BD127F1F53600B7572F /* WhyBreast.swift */; };
+		B5DE4BD427F1FB8D00B7572F /* ProfileHost.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5DE4BD327F1FB8D00B7572F /* ProfileHost.swift */; };
 		B5E1F3EE27B1D2F700DFB443 /* FYPNewApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E1F3ED27B1D2F700DFB443 /* FYPNewApp.swift */; };
 		B5E1F3F027B1D2F700DFB443 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E1F3EF27B1D2F700DFB443 /* ContentView.swift */; };
 		B5E1F3F227B1D2F800DFB443 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5E1F3F127B1D2F800DFB443 /* Assets.xcassets */; };
 		B5E1F3F527B1D2F800DFB443 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B5E1F3F427B1D2F800DFB443 /* Preview Assets.xcassets */; };
 		B5E1F3F727B1D2F800DFB443 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5E1F3F627B1D2F800DFB443 /* Persistence.swift */; };
 		B5E1F3FA27B1D2F800DFB443 /* FYPNew.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B5E1F3F827B1D2F800DFB443 /* FYPNew.xcdatamodeld */; };
+		B5E1F40227B1D39B00DFB443 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B5E1F40127B1D39B00DFB443 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B5E1F3EA27B1D2F700DFB443 /* FYPNew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FYPNew.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B569C622280F793B0029E796 /* READ_ME.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = READ_ME.txt; path = ../../../../READ_ME.txt; sourceTree = "<group>"; };
+		B584BBA127B4011A005F9DC6 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		B584BBA327B40128005F9DC6 /* MyCalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCalendarView.swift; sourceTree = "<group>"; };
+		B584BBA527B40E22005F9DC6 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		B584BBA727B40EEC005F9DC6 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		B584BBA927B41083005F9DC6 /* Notifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
+		B584BBEB27BD73AB005F9DC6 /* ElegantCalendar.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = ElegantCalendar.xcassets; path = "../../../../Library/Developer/Xcode/DerivedData/FYPNew-gtxlfmpokrbnthawtdrbokpzwppp/SourcePackages/checkouts/ElegantCalendar/ElegantCalendar.xcassets"; sourceTree = "<group>"; };
+		B584BBEF27BD74E8005F9DC6 /* Visit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Visit.swift; sourceTree = "<group>"; };
+		B584BBF127BD750A005F9DC6 /* Date+Additions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Additions.swift"; sourceTree = "<group>"; };
+		B5DE4BB627EA440B00B7572F /* Breastfeeding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Breastfeeding.swift; sourceTree = "<group>"; };
+		B5DE4BB827EA456600B7572F /* TummyTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TummyTime.swift; sourceTree = "<group>"; };
+		B5DE4BBA27EA4D5B00B7572F /* BreastAttach.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreastAttach.swift; sourceTree = "<group>"; };
+		B5DE4BBC27EB629300B7572F /* BreastPositions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreastPositions.swift; sourceTree = "<group>"; };
+		B5DE4BBE27EB796B00B7572F /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
+		B5DE4BC027EB7F3C00B7572F /* Steralise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Steralise.swift; sourceTree = "<group>"; };
+		B5DE4BC527EB98F200B7572F /* WhySter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhySter.swift; sourceTree = "<group>"; };
+		B5DE4BC827EB995800B7572F /* SterMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SterMethods.swift; sourceTree = "<group>"; };
+		B5DE4BCE27F1F39400B7572F /* SterTut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SterTut.swift; sourceTree = "<group>"; };
+		B5DE4BD127F1F53600B7572F /* WhyBreast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhyBreast.swift; sourceTree = "<group>"; };
+		B5DE4BD327F1FB8D00B7572F /* ProfileHost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHost.swift; sourceTree = "<group>"; };
+		B5E1F3EA27B1D2F700DFB443 /* Pregnancy Partner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pregnancy Partner.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5E1F3ED27B1D2F700DFB443 /* FYPNewApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FYPNewApp.swift; sourceTree = "<group>"; };
 		B5E1F3EF27B1D2F700DFB443 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B5E1F3F127B1D2F800DFB443 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B5E1F3F427B1D2F800DFB443 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		B5E1F3F627B1D2F800DFB443 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		B5E1F3F927B1D2F800DFB443 /* FYPNew.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FYPNew.xcdatamodel; sourceTree = "<group>"; };
+		B5E1F40127B1D39B00DFB443 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,15 +80,86 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B584BB9527B3FF10005F9DC6 /* FirebaseDatabaseSwift-Beta in Frameworks */,
+				B584BBEA27BD7380005F9DC6 /* ElegantCalendar in Frameworks */,
+				B584BB9727B3FF10005F9DC6 /* FirebaseFirestore in Frameworks */,
+				B584BB9927B3FF10005F9DC6 /* FirebaseFirestoreSwift-Beta in Frameworks */,
+				B584BB9327B3FF10005F9DC6 /* FirebaseDatabase in Frameworks */,
+				B584BB9127B3FF10005F9DC6 /* FirebaseAuth in Frameworks */,
+				B584BB9D27B3FF10005F9DC6 /* FirebaseStorageSwift-Beta in Frameworks */,
+				B584BB9B27B3FF10005F9DC6 /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B584BB9E27B400E6005F9DC6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B5DE4BC327EB987200B7572F /* Main Pages */,
+				B5DE4BB627EA440B00B7572F /* Breastfeeding.swift */,
+				B5DE4BC227EB984E00B7572F /* Breastfeeding */,
+				B5DE4BC727EB992200B7572F /* Tummy Time */,
+				B5DE4BB827EA456600B7572F /* TummyTime.swift */,
+				B5DE4BC427EB98A900B7572F /* Sterilising */,
+				B5DE4BC027EB7F3C00B7572F /* Steralise.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B584BBAB27B43D5F005F9DC6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B584BBEF27BD74E8005F9DC6 /* Visit.swift */,
+				B584BBF127BD750A005F9DC6 /* Date+Additions.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B5DE4BC227EB984E00B7572F /* Breastfeeding */ = {
+			isa = PBXGroup;
+			children = (
+				B5DE4BBA27EA4D5B00B7572F /* BreastAttach.swift */,
+				B5DE4BBC27EB629300B7572F /* BreastPositions.swift */,
+				B5DE4BD127F1F53600B7572F /* WhyBreast.swift */,
+			);
+			path = Breastfeeding;
+			sourceTree = "<group>";
+		};
+		B5DE4BC327EB987200B7572F /* Main Pages */ = {
+			isa = PBXGroup;
+			children = (
+				B584BBA127B4011A005F9DC6 /* Settings.swift */,
+				B584BBA327B40128005F9DC6 /* MyCalendarView.swift */,
+				B584BBA527B40E22005F9DC6 /* MainView.swift */,
+				B584BBA727B40EEC005F9DC6 /* Home.swift */,
+				B584BBA927B41083005F9DC6 /* Notifications.swift */,
+			);
+			path = "Main Pages";
+			sourceTree = "<group>";
+		};
+		B5DE4BC427EB98A900B7572F /* Sterilising */ = {
+			isa = PBXGroup;
+			children = (
+				B5DE4BC527EB98F200B7572F /* WhySter.swift */,
+				B5DE4BC827EB995800B7572F /* SterMethods.swift */,
+				B5DE4BCE27F1F39400B7572F /* SterTut.swift */,
+			);
+			path = Sterilising;
+			sourceTree = "<group>";
+		};
+		B5DE4BC727EB992200B7572F /* Tummy Time */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Tummy Time";
+			sourceTree = "<group>";
+		};
 		B5E1F3E127B1D2F700DFB443 = {
 			isa = PBXGroup;
 			children = (
+				B584BBEB27BD73AB005F9DC6 /* ElegantCalendar.xcassets */,
 				B5E1F3EC27B1D2F700DFB443 /* FYPNew */,
 				B5E1F3EB27B1D2F700DFB443 /* Products */,
 			);
@@ -47,7 +168,7 @@
 		B5E1F3EB27B1D2F700DFB443 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B5E1F3EA27B1D2F700DFB443 /* FYPNew.app */,
+				B5E1F3EA27B1D2F700DFB443 /* Pregnancy Partner.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,11 +176,17 @@
 		B5E1F3EC27B1D2F700DFB443 /* FYPNew */ = {
 			isa = PBXGroup;
 			children = (
+				B584BBAB27B43D5F005F9DC6 /* Models */,
+				B584BB9E27B400E6005F9DC6 /* Views */,
+				B5DE4BBE27EB796B00B7572F /* Profile.swift */,
+				B5DE4BD327F1FB8D00B7572F /* ProfileHost.swift */,
 				B5E1F3ED27B1D2F700DFB443 /* FYPNewApp.swift */,
 				B5E1F3EF27B1D2F700DFB443 /* ContentView.swift */,
 				B5E1F3F127B1D2F800DFB443 /* Assets.xcassets */,
 				B5E1F3F627B1D2F800DFB443 /* Persistence.swift */,
+				B569C622280F793B0029E796 /* READ_ME.txt */,
 				B5E1F3F827B1D2F800DFB443 /* FYPNew.xcdatamodeld */,
+				B5E1F40127B1D39B00DFB443 /* GoogleService-Info.plist */,
 				B5E1F3F327B1D2F800DFB443 /* Preview Content */,
 			);
 			path = FYPNew;
@@ -89,8 +216,18 @@
 			dependencies = (
 			);
 			name = FYPNew;
+			packageProductDependencies = (
+				B584BB9027B3FF10005F9DC6 /* FirebaseAuth */,
+				B584BB9227B3FF10005F9DC6 /* FirebaseDatabase */,
+				B584BB9427B3FF10005F9DC6 /* FirebaseDatabaseSwift-Beta */,
+				B584BB9627B3FF10005F9DC6 /* FirebaseFirestore */,
+				B584BB9827B3FF10005F9DC6 /* FirebaseFirestoreSwift-Beta */,
+				B584BB9A27B3FF10005F9DC6 /* FirebaseStorage */,
+				B584BB9C27B3FF10005F9DC6 /* FirebaseStorageSwift-Beta */,
+				B584BBE927BD7380005F9DC6 /* ElegantCalendar */,
+			);
 			productName = FYPNew;
-			productReference = B5E1F3EA27B1D2F700DFB443 /* FYPNew.app */;
+			productReference = B5E1F3EA27B1D2F700DFB443 /* Pregnancy Partner.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -117,6 +254,10 @@
 				Base,
 			);
 			mainGroup = B5E1F3E127B1D2F700DFB443;
+			packageReferences = (
+				B584BB8F27B3FF10005F9DC6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				B584BBE827BD7380005F9DC6 /* XCRemoteSwiftPackageReference "ElegantCalendar" */,
+			);
 			productRefGroup = B5E1F3EB27B1D2F700DFB443 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -133,6 +274,9 @@
 			files = (
 				B5E1F3F527B1D2F800DFB443 /* Preview Assets.xcassets in Resources */,
 				B5E1F3F227B1D2F800DFB443 /* Assets.xcassets in Resources */,
+				B569C623280F793B0029E796 /* READ_ME.txt in Resources */,
+				B5E1F40227B1D39B00DFB443 /* GoogleService-Info.plist in Resources */,
+				B584BBEC27BD73AB005F9DC6 /* ElegantCalendar.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,10 +287,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B584BBA227B4011A005F9DC6 /* Settings.swift in Sources */,
+				B5DE4BBB27EA4D5B00B7572F /* BreastAttach.swift in Sources */,
+				B584BBA827B40EEC005F9DC6 /* Home.swift in Sources */,
+				B5DE4BB927EA456600B7572F /* TummyTime.swift in Sources */,
+				B584BBA627B40E22005F9DC6 /* MainView.swift in Sources */,
+				B584BBF027BD74E8005F9DC6 /* Visit.swift in Sources */,
+				B584BBAA27B41083005F9DC6 /* Notifications.swift in Sources */,
+				B5DE4BC127EB7F3C00B7572F /* Steralise.swift in Sources */,
+				B5DE4BB727EA440C00B7572F /* Breastfeeding.swift in Sources */,
+				B5DE4BC927EB995800B7572F /* SterMethods.swift in Sources */,
+				B584BBA427B40128005F9DC6 /* MyCalendarView.swift in Sources */,
+				B5DE4BCF27F1F39400B7572F /* SterTut.swift in Sources */,
+				B5DE4BC627EB98F200B7572F /* WhySter.swift in Sources */,
+				B5DE4BBF27EB796B00B7572F /* Profile.swift in Sources */,
 				B5E1F3FA27B1D2F800DFB443 /* FYPNew.xcdatamodeld in Sources */,
 				B5E1F3F727B1D2F800DFB443 /* Persistence.swift in Sources */,
 				B5E1F3F027B1D2F700DFB443 /* ContentView.swift in Sources */,
 				B5E1F3EE27B1D2F700DFB443 /* FYPNewApp.swift in Sources */,
+				B584BBF227BD750A005F9DC6 /* Date+Additions.swift in Sources */,
+				B5DE4BD227F1F53600B7572F /* WhyBreast.swift in Sources */,
+				B5DE4BBD27EB629300B7572F /* BreastPositions.swift in Sources */,
+				B5DE4BD427F1FB8D00B7572F /* ProfileHost.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,10 +348,12 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				EXCLUDED_ARCHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -247,6 +411,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -262,6 +427,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -280,6 +446,7 @@
 				DEVELOPMENT_TEAM = QWGWQ2K4M9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "Allow access to add Events and Reminders";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -291,7 +458,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = personal.FYPNew;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Pregnancy Partner";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -309,6 +476,7 @@
 				DEVELOPMENT_TEAM = QWGWQ2K4M9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCalendarsUsageDescription = "Allow access to add Events and Reminders";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -320,7 +488,7 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = personal.FYPNew;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Pregnancy Partner";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -349,6 +517,68 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B584BB8F27B3FF10005F9DC6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+		B584BBE827BD7380005F9DC6 /* XCRemoteSwiftPackageReference "ElegantCalendar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ThasianX/ElegantCalendar";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B584BB9027B3FF10005F9DC6 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B584BB8F27B3FF10005F9DC6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		B584BB9227B3FF10005F9DC6 /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B584BB8F27B3FF10005F9DC6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		B584BB9427B3FF10005F9DC6 /* FirebaseDatabaseSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B584BB8F27B3FF10005F9DC6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseDatabaseSwift-Beta";
+		};
+		B584BB9627B3FF10005F9DC6 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B584BB8F27B3FF10005F9DC6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		B584BB9827B3FF10005F9DC6 /* FirebaseFirestoreSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B584BB8F27B3FF10005F9DC6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreSwift-Beta";
+		};
+		B584BB9A27B3FF10005F9DC6 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B584BB8F27B3FF10005F9DC6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		B584BB9C27B3FF10005F9DC6 /* FirebaseStorageSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B584BB8F27B3FF10005F9DC6 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseStorageSwift-Beta";
+		};
+		B584BBE927BD7380005F9DC6 /* ElegantCalendar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B584BBE827BD7380005F9DC6 /* XCRemoteSwiftPackageReference "ElegantCalendar" */;
+			productName = ElegantCalendar;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		B5E1F3F827B1D2F800DFB443 /* FYPNew.xcdatamodeld */ = {

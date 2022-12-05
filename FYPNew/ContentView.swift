@@ -1,88 +1,225 @@
 //
 //  ContentView.swift
-//  FYPNew
+//  App
 //
 //  Created by Daniel Clarke on 07/02/2022.
 //
 
 import SwiftUI
 import CoreData
+import FirebaseAuth
+import FirebaseFirestore
+import EventKit
+import EventKitUI
+
+ class AppViewModel: ObservableObject {
+    
+    let auth = Auth.auth()
+    let db = Firestore.firestore()
+    
+    @Published var signedIn = false
+    
+    var isSignedIn: Bool {
+        return auth.currentUser != nil
+    }
+    
+    func signIn(email: String, password: String){
+        auth.signIn(withEmail: email, password: password) { [weak self] result, error in
+            guard result != nil, error == nil else {
+                return
+            }
+            DispatchQueue.main.async{
+                // Success
+                self?.signedIn = true
+            }
+        }
+    }
+     
+     func setuserDetails(firstname: String, lastname: String, weeks: Int){
+         var ref: DocumentReference? = nil
+         ref = db.collection("users").addDocument(data: [
+             "first": firstname,
+             "last": lastname,
+             "weeks": weeks,
+         ]) { err in
+             if let err = err {
+                 print("Error adding document: \(err)")
+             } else {
+                 print("Document added with ID: \(ref!.documentID)")
+             }
+         }
+     }
+    
+    
+    func signUp(email: String, password: String){
+        auth.createUser(withEmail: email, password: password) { [weak self] result, error in
+            guard result != nil, error == nil else {
+                return
+            }
+            DispatchQueue.main.async{
+                // Success
+                self?.signedIn = true
+            }
+        }
+        
+    }
+    
+    func signOut(){
+        
+        try? auth.signOut()
+        
+        self.signedIn = false
+    }
+}
+ 
+
+
 
 struct ContentView: View {
-    @Environment(\.managedObjectContext) private var viewContext
-
-    @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
-        animation: .default)
-    private var items: FetchedResults<Item>
-
+    
+    let database = Firestore.firestore()
+    
+    @EnvironmentObject var viewModel: AppViewModel
+    
     var body: some View {
         NavigationView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp!, formatter: itemFormatter)")
-                    } label: {
-                        Text(item.timestamp!, formatter: itemFormatter)
-                    }
-                }
-                .onDelete(perform: deleteItems)
+            
+            if viewModel.signedIn {
+                MainView()
             }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
-                }
-            }
-            Text("Select an item")
-        }
-    }
-
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
-
-            do {
-                try viewContext.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+            else {
+                SignInView()
             }
         }
-    }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            offsets.map { items[$0] }.forEach(viewContext.delete)
-
-            do {
-                try viewContext.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-            }
+        .onAppear {
+            viewModel.signedIn = viewModel.isSignedIn
         }
     }
 }
 
-private let itemFormatter: DateFormatter = {
-    let formatter = DateFormatter()
-    formatter.dateStyle = .short
-    formatter.timeStyle = .medium
-    return formatter
-}()
+struct SignInView: View {
+    @State var email = ""
+    @State var password = ""
+    
+    @EnvironmentObject var viewModel: AppViewModel
+    
+    var body: some View {
+        VStack{
+            VStack{
+                TextField("Email Address", text: $email)
+                    .disableAutocorrection(true)
+                    .autocapitalization(.none)
+                    .padding()
+                    .background(Color(.secondarySystemBackground))
+                SecureField("Password", text: $password)
+                    .disableAutocorrection(true)
+                    .autocapitalization(.none)
+                    .padding()
+                    .background(Color(.secondarySystemBackground))
+                
+                Button(action: {
+                    
+                    viewModel.signIn(email: email, password: password)
+                    
+                }, label: {
+                    Text("Sign In")
+                        .foregroundColor(Color.white)
+                        .frame(width: 200, height: 50)
+                        .background(Color(red: 252 / 255, green: 136 / 255, blue: 155 / 255))
+                        .cornerRadius(20)
+                        .overlay(RoundedRectangle(cornerRadius: 20).stroke(Color.black, lineWidth: 1))
+                        .padding()
+                    
+                })
+                
+                NavigationLink("Create Account", destination: SignUpView())
+                    .padding([.leading,.trailing])
+            }
+            .padding()
+            Spacer()
+        }
+        .navigationTitle("Sign In")
+    }
+}
+
+struct SignUpView: View {
+    @State var email = ""
+    @State var password = ""
+    
+    @EnvironmentObject var viewModel: AppViewModel
+    
+    var body: some View {
+        VStack{
+            VStack{
+                TextField("Email Address", text: $email)
+                    .disableAutocorrection(true)
+                    .autocapitalization(.none)
+                    .padding()
+                    .background(Color(.secondarySystemBackground))
+                SecureField("Password", text: $password)
+                    .disableAutocorrection(true)
+                    .autocapitalization(.none)
+                    .padding()
+                    .background(Color(.secondarySystemBackground))
+                
+                Button(action: {
+                    
+                    viewModel.signUp(email: email, password: password)
+                    
+                }, label: {
+                    Text("Sign Up")
+                        .foregroundColor(Color.white)
+                        .frame(width: 200, height: 50)
+                        .background(Color(red: 252 / 255, green: 136 / 255, blue: 155 / 255))
+                        .cornerRadius(20)
+                        .overlay(RoundedRectangle(cornerRadius: 20).stroke(Color.black, lineWidth: 1))
+                    
+                })
+            }
+            .padding()
+            Spacer()
+        }
+        .navigationTitle("Create Account")
+    }
+}
+
+ /* struct MainView: View {
+    var body: some View {
+        TabView{
+            Settings()
+                .tabItem(){
+                    Image(systemName: "gear")
+                    Text("Settings")
+                }
+            Calendar()
+                .tabItem(){
+                    Image(systemName: "calendar.circle.fill")
+                    Text("Calendar")
+                }
+        }
+    }
+}
+  */
+
+struct ExampleCalendarView: View {
+
+    var body: some View {
+
+        ExampleMonthlyCalendarView(
+            ascVisits: Visit.mocks(
+                start: .daysFromToday(-30*36),
+                end: .daysFromToday(30*36)),
+            initialMonth: .daysFromToday(0))
+
+    }
+}
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        let viewModel = AppViewModel()
+        ContentView()
+            .environmentObject(viewModel)
+        
     }
 }
+
